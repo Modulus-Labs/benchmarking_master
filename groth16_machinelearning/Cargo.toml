@@ -1,0 +1,21 @@
+[package]
+name = "groth16_machinelearning"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ark-bn254 = "0.3.0"
+ark-circom = {path="../ark-circom"}
+ark-groth16 = "0.3.0"
+ark-std = {version = "0.3.0", features = ["print-trace"]}
+dhat = "0.3.2"
+json = "0.12.4"
+
+[features]
+dhat-heap = []
+
+[profile.release]
+debug=1
+
