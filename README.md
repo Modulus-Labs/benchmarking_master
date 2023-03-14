@@ -1,3 +1,3 @@
 #Benchmarking Code for Modulus Labs whitepaper
 
-Each proof system has it's own subdirectory, except Gemini/Groth16 which share the r1cs_machinelearning subdirectory
+Halo2 benchmarks found at: https://github.com/Modulus-Labs/halo2_ml
