@@ -1,0 +1,25 @@
+[package]
+name = "plonky2_machinelearning"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.65"
+derive_more = "0.99.17"
+dhat = {version = "0.3.2", optional = true}
+icecream = "0.1.0"
+json = "0.12.4"
+log = "0.4.17"
+ndarray = "0.15.6"
+plonky2 = { path= "/home/aweso/plonky2/plonky2/plonky2" }
+simple_logger = {version = "4.0.0", default-features = false}
+
+[features]
+generator_test = []
+dhat-heap = ["dep:dhat"]
+
+#[profile.release]
+#debug=1
+
