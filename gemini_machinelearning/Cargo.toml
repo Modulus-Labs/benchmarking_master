@@ -19,7 +19,8 @@ ark-bn254 = { git = "https://github.com/arkworks-rs/curves" }
 
 
 [dependencies]
-ark-gemini = {git = "https://github.com/arkworks-rs/gemini", features = ["print-trace"]}
+#ark-gemini = {git = "https://github.com/arkworks-rs/gemini", features = ["print-trace"]}
+ark-gemini = {path = "../../../arkworks/gemini", features = ["print-trace"]}
 ark-std = {version = "0.3.0"}
 ark-ec = {version = "0.3.0"}
 ark-ff = {version = "0.3.0"}

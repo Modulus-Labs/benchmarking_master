@@ -7,7 +7,7 @@ edition = "2021"
 
 [dependencies]
 ark-bn254 = "0.3.0"
-ark-circom = {path="../ark-circom"}
+ark-circom = {path="../../../arkworks/ark-circom"}
 ark-groth16 = "0.3.0"
 ark-std = {version = "0.3.0", features = ["print-trace"]}
 dhat = "0.3.2"
